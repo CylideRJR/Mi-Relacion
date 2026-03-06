@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Aventuras Juntos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nuestra Historia</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería de Citas</a></li>
+                <li><a href="#favoritos">Nuestros Favoritos</a></li>
+                <li><a href="#buzon">Buzón de Ideas</a></li>
+            </nav>
+        </nav>
+    </header>
+
+    <hr> <main>
+        <section id="inicio">
+            <h2>¿Cómo empezó todo?</h2>
+            <p>Todo comenzó un día muy especial. <strong>Nunca voy a olvidar esa primera salida.</strong> 
+            Estaba un poco nervioso, pero al final fue un día increíble.</p>
+            
+            <p>Desde ese momento, supe que quería compartir más tiempo contigo. <i>Cada cita ha sido una aventura nueva</i>, y quería hacer esta página para recordar todos esos momentos.</p>
+            
+            <p>Mi recuerdo favorito es cuando fuimos a <mark>nuestro restaurante preferido</mark>. <br> <small>(Aún recuerdo lo que pedimos ese día).</small></p> </section>
+
+        <section id="galeria">
+            <h2>Nuestra Galería</h2>
+            <p>Aquí dejo <b>tres de mis fotos favoritas</b> de nuestras salidas:</p> <div>
+                <img src="foto1.jpg" alt="Nuestra primera cita" width="300">
+                <img src="foto2.jpg" alt="Paseo por el parque" width="300">
+                <img src="foto3.jpg" alt="Cena de aniversario" width="300">
+            </div>
+
+            <p><em>Ver estas fotos siempre me saca una sonrisa.</em></p> </section>
+
+        <section id="favoritos">
+            <h2>Nuestros Favoritos</h2>
+            <h3>Top 3 de nuestras mejores salidas</h3>
+            <ol>
+                <li>La vez que fuimos al cine a ver esa película de terror.</li>
+                <li>Nuestro viaje improvisado de fin de semana.</li>
+                <li>Esa tarde tranquila caminando por el centro.</li>
+            </ol>
+
+            <h3>Lugares que hemos visitado</h3>
+            <table border="1">
+                <tr>
+                    <th>Lugar</th>
+                    <th>¿Qué hicimos?</th>
+                    <th>Calificación</th>
+                </tr>
+                <tr>
+                    <td>Cafetería del Centro</td>
+                    <td>Tomar frappes y platicar horas</td>
+                    <td>10/10</td>
+                </tr>
+                <tr>
+                    <td>Cine</td>
+                    <td>Maratón de películas</td>
+                    <td>9/10</td>
+                </tr>
+            </table>
+
+            <br>
+            <p>Para nuestra próxima cita, me gustaría llevarte a un lugar nuevo. Estuve viendo opciones en <a href="https://es.foursquare.com/" target="_blank">esta guía de lugares geniales</a>.</p>
+
+            <h3>Nuestra Canción</h3>
+            <p>Esta canción siempre me recuerda a ti:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <hr>
+
+        <section id="buzon">
+            <h2>Buzón de Próximas Citas</h2>
+            <p>¿Qué te gustaría hacer en nuestra próxima salida? ¡Déjame tus ideas!</p>
+            
+            <form action="#" method="POST">
+                <label for="nombre">Tu Nombre (o apodo cariñoso):</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Tu Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <p>Elige el ambiente ideal:</p>
+                <input type="radio" id="tranquilo" name="ambiente" value="tranquilo">
+                <label for="tranquilo">Tranquilo (Películas/Cena en casa)</label><br>
+                <input type="radio" id="aventura" name="ambiente" value="aventura">
+                <label for="aventura">Aventura (Salir a caminar/Viaje)</label><br>
+                <input type="radio" id="romantico" name="ambiente" value="romantico">
+                <label for="romantico">Romántico (Cena elegante)</label><br><br>
+
+                <p>Opciones extra:</p>
+                <input type="checkbox" id="sorpresa" name="sorpresa">
+                <label for="sorpresa">¡Quiero que sea sorpresa!</label><br>
+                <input type="checkbox" id="mascota" name="mascota">
+                <label for="mascota">Llevar al perrito (¡un paseo tranquilo para sus 11 años!)</label><br><br>
+
+                <label for="detalles">Describe tu cita perfecta:</label><br>
+                <textarea id="detalles" name="detalles" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">¡Enviar Propuesta!</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Hecho con mucho amor para ti.</p>
+        <address>
+            Desde: Tantoyuca, Veracruz<br>
+            Puedes escribirme a: <a href="mailto:mi.correo@ejemplo.com">mi.correo@ejemplo.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
